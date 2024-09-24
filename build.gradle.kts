@@ -33,8 +33,8 @@ dependencies {
 
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
-	runtimeOnly("org.xerial:sqlite-jdbc:3.46.1.0")
-	runtimeOnly("org.hibernate.orm:hibernate-community-dialects:6.6.1.Final")
+	runtimeOnly("org.xerial:sqlite-jdbc")
+	runtimeOnly("org.hibernate.orm:hibernate-community-dialects")
 
 	annotationProcessor("org.projectlombok:lombok")
 

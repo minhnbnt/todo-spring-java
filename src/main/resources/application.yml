@@ -1,3 +1,7 @@
+logging:
+  level:
+    org.hibernate.SQL: "DEBUG"
+
 spring:
   application:
     name: "todo"
@@ -5,15 +9,10 @@ spring:
   profiles:
     active: "dev"
 
+  datasource:
+    driver-class-name: "org.sqlite.JDBC"
+    url: "jdbc:sqlite:db.sqlite3"
+
   jpa:
-    database-platform: "org.hibernate.community.dialect.SQLiteDialect"
-
     hibernate:
-      ddl-auto: update
-
-    show-sql: true
-
-
-datasource:
-  driver-class-name: "org.sqlite.JDBC"
-  url: "jdbc:sqlite:db.sqlite3"
+      ddl-auto: "update"
